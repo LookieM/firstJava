@@ -1,11 +1,11 @@
 public class Main {
     public static void main(String[] args) {
 
-        Dog dog1 = new Dog("Buddy", 5, 15.0, "Brown", "Labrador");
+        Dog dog1 = new Dog("Czesiek", 5, 15.0, "Brown", "Mieszany");
         Dog dog2 = new Dog(2, 10.0, "Black", "Bulldog");
         Pigeon pigeon1 = new Pigeon("Perry", 1, 0.5, "Gray", true);
         Pigeon pigeon2 = new Pigeon("Polly", 2, "White", false);
-        Pike pike1 = new Pike("Predator", 3, 4.5, 8, 120.5);
+        Pike pike1 = new Pike("Król wód", 3, 4.5, 8, 120.5);
         Pike pike2 = new Pike("Hunter", 2, 3.0, 85.0);
 
 

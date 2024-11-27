@@ -44,8 +44,15 @@ public abstract class Animal {
             System.out.println("Voice...");
         }
 
-    public Animal(String name, int age, double weight) {}
-    public Animal(String name, int age) {}
+    public Animal(String name, int age, double weight) {
+        this.name = name;
+        this.age = age;
+        this.weight = weight;
+    }
+    public Animal(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
     public Animal() {}
 
 }
