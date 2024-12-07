@@ -1,4 +1,4 @@
-public class Pigeon extends Bird {
+public class Pigeon extends Bird implements AnimalMove, AnimalBehavior{
     private boolean domestic;
 
     public boolean isDomestic() {
@@ -35,5 +35,9 @@ public class Pigeon extends Bird {
         return "Pigeon{" +
                 "domestic=" + domestic +
                 '}';
+    }
+    @Override
+    public void sleep(){
+        System.out.println(getName() + "sleeps atop a roof");
     }
 }

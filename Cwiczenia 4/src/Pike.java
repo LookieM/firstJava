@@ -1,4 +1,4 @@
-public class Pike extends Fish {
+public class Pike extends Fish implements AnimalBehavior,AnimalMove{
     private double length;
 
     public double getLength() {
@@ -36,5 +36,13 @@ public class Pike extends Fish {
         return "Pike{" +
                 "length=" + length +
                 '}';
+    }
+    @Override
+    public void sleep(){
+        System.out.println(getName() + "sleeps in the riverbed");
+    }
+    @Override
+    public void move(){
+        System.out.println(getName() + "zooms through the river");
     }
 }

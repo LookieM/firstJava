@@ -1,4 +1,4 @@
-public class Dog extends Mammal{
+public class Dog extends Mammal implements AnimalBehavior, AnimalMove{
     private String breed;
 
     public String getBreed() {
@@ -35,5 +35,13 @@ public class Dog extends Mammal{
     @Override
     public void eat(){
         System.out.println(getName() + " eats a small mouse.");
+    }
+    @Override
+    public void sleep(){
+        System.out.println(getName() + "sleeps on the couch");
+    }
+    @Override
+    public void move(){
+        System.out.println(getName() + " runs on four paws");
     }
 }

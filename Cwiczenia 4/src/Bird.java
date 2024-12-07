@@ -36,4 +36,6 @@ public abstract class Bird extends Animal {
                 "featherColor='" + featherColor + '\'' +
                 '}';
     }
+
+    public abstract void sleep();
 }

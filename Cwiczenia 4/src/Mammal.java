@@ -34,4 +34,6 @@ public abstract class Mammal extends Animal {
                 "furColor='" + furColor + '\'' +
                 '}';
     }
+
+    public abstract void sleep();
 }
