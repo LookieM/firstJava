@@ -1,5 +1,10 @@
-public class Dog extends Mammal implements AnimalBehavior, AnimalMove{
+public class Dog extends Mammal implements AnimalBehavior, AnimalMove, AnimalSpeak{
     private String breed;
+
+    public Dog(String name){
+        super(name);
+    }
+
 
     public String getBreed() {
         return breed;
@@ -19,6 +24,8 @@ public class Dog extends Mammal implements AnimalBehavior, AnimalMove{
         super(name, age, weight, furColor);
         this.breed = breed;
     }
+
+
 
     @Override
     public String toString() {
@@ -43,5 +50,9 @@ public class Dog extends Mammal implements AnimalBehavior, AnimalMove{
     @Override
     public void move(){
         System.out.println(getName() + " runs on four paws");
+    }
+    @Override
+    public void speak(){
+        System.out.println(getName() + " barks");
     }
 }

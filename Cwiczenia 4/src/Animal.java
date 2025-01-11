@@ -55,4 +55,8 @@ public abstract class Animal {
     }
     public Animal() {}
 
+    public Animal(String name){
+        this.name = name;
+    }
+
 }

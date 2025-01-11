@@ -1,4 +1,4 @@
-public class Pike extends Fish implements AnimalBehavior,AnimalMove{
+public class Pike extends Fish implements AnimalBehavior,AnimalMove,AnimalSpeak{
     private double length;
 
     public double getLength() {
@@ -44,5 +44,9 @@ public class Pike extends Fish implements AnimalBehavior,AnimalMove{
     @Override
     public void move(){
         System.out.println(getName() + "zooms through the river");
+    }
+    @Override
+    public void speak(){
+        System.out.println(getName() + "speaks into the river");
     }
 }

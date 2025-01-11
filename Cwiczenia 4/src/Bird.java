@@ -1,4 +1,4 @@
-public abstract class Bird extends Animal {
+public abstract class Bird extends Animal{
     private String featherColor;
 
     public String getFeatherColor() {
@@ -12,6 +12,9 @@ public abstract class Bird extends Animal {
     public Bird(String name, int age, double weight, String featherColor) {
         super(name, age, weight);
         this.featherColor = featherColor;
+    }
+    public Bird(String name){
+        super(name);
     }
 
     public Bird() {

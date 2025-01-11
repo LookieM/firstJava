@@ -1,4 +1,4 @@
-public class Pigeon extends Bird implements AnimalMove, AnimalBehavior{
+public class Pigeon extends Bird implements AnimalMove, AnimalBehavior,AnimalSpeak{
     private boolean domestic;
 
     public boolean isDomestic() {
@@ -20,6 +20,10 @@ public class Pigeon extends Bird implements AnimalMove, AnimalBehavior{
     }
     public Pigeon() {}
 
+    public Pigeon(String name){
+        super(name);
+    }
+
     @Override
     public void getVoice() {
         System.out.println(getName() + " coos.");
@@ -39,5 +43,14 @@ public class Pigeon extends Bird implements AnimalMove, AnimalBehavior{
     @Override
     public void sleep(){
         System.out.println(getName() + "sleeps atop a roof");
+    }
+    @Override
+    public void move(){
+        System.out.println(getName() + "flaps its wings");
+    }
+    @Override
+    public void speak(){
+        System.out.println(getName() + "chirps");
+
     }
 }

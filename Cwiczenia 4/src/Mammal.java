@@ -1,5 +1,9 @@
 public abstract class Mammal extends Animal {
     private String furColor;
+
+    public Mammal(String name){
+        super(name);
+    }
     public Mammal() {
         super();
         this.furColor = " ";
